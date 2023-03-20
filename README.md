@@ -1,0 +1,1 @@
+# allegro-store-frontend
