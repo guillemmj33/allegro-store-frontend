@@ -49,7 +49,7 @@ export default function Register() {
       Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'You have successfully registered!',
+        title: 'Yey! You have successfully registered!',
         showConfirmButton: false,
         timer: 2000,
       })
@@ -70,7 +70,7 @@ export default function Register() {
   }
 
   return (
-    <section className='bg-gray-50 dark:bg-white mt-10 sm:mt-6'>
+    <section className='bg-gray-50 dark:bg-white mt-10 sm:mt-4 mb-24 sm:-mb-24'>
       <div className='flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0'>
         <div className='w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-cyan-500 dark:border-gray-700'>
           <div className='p-6 space-y-4 md:space-y-6 sm:p-8'>
