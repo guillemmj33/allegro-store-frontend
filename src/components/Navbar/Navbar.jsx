@@ -29,9 +29,9 @@ export default function Navbar() {
             xmlns='http://www.w3.org/2000/svg'
           >
             <path
-              fill-rule='evenodd'
+              fillRule='evenodd'
               d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-              clip-rule='evenodd'
+              clipRule='evenodd'
             ></path>
           </svg>
         </button>
@@ -64,7 +64,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href='/login'
+                href='/register'
                 className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-cyan-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
               >
                 <i className="fa-solid fa-user"></i> Login or register
