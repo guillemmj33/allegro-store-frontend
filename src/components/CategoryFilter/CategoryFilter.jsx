@@ -11,7 +11,7 @@ export default function CategoryFilter({ setCategory }) {
     setCategory(category)
   }
   return (
-    <div className='px-2 mt-6 text-md flex flex-row overflow-x-auto gap-14'>
+    <div className='px-2 mt-6 text-md flex flex-row flex-grow overflow-x-auto gap-14'>
       <button
         className='text-center items-center'
         onClick={() => handleCategoryClick('Piano')}

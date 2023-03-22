@@ -157,6 +157,7 @@ export default function CreateItemModal() {
                   <option value='Guitar'>Guitar</option>
                   <option value='Bass'>Bass</option>
                   <option value='Drums'>Drums</option>
+                  <option value='Piano'>Piano</option>
                   <option value='Studio'>Studio</option>
                   <option value='DJ'>DJ</option>
                 </select>
