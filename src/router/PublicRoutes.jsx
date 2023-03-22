@@ -7,6 +7,7 @@ import Contact from '../views/Contact'
 import SingleItem from '../views/SingleItem'
 import Login from '../views/Login'
 import Register from '../views/Register'
+import CreateItem from '../views/CreateItem'
 
 export default function PublicRoutes() {
   return (
@@ -19,6 +20,7 @@ export default function PublicRoutes() {
           <Route path='/about' element={<About />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route path='/create-item' element={<CreateItem />} />
         </Routes>
       </Layout>
     </Router>

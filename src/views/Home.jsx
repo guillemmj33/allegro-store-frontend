@@ -1,7 +1,56 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import ItemCard from '../components/ItemCard/ItemCard'
+import { getItems } from '../services/items.service'
 
 export default function Home() {
+  const imagesBaseUrl = import.meta.env.VITE_IMAGES_BACKEND_URL
+  const [items, setItems] = useState([])
+  const [searchTerm, setSearchTerm] = useState('')
+
+  const getAllItems = async () => {
+    const { data } = await getItems()
+    setItems(data.items)
+  }
+
+  const filteredItems = items.filter(({ title }) =>
+    title.toLowerCase().includes(searchTerm.toLowerCase())
+  )
+
+  useEffect(() => {
+    getAllItems()
+  }, [])
+
   return (
-    <div>Home</div>
+    <>
+      <h1 className='mt-24 px-2 text-center text-2xl tracking-tight font-normal text-gray-900 dark:text-slate-900'>
+        Join the millions of music lovers who use Allegro and find your dream
+        gear <span className="font-semibold underline decoration-cyan-500">today</span>!
+      </h1>
+      <div className='-mt-14 flex px-2 md:px-28 lg:px-48 xl:px-56'>
+        <input
+          type='text'
+          placeholder='Search...'
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className='w-full mt-20 rounded-full border border-gray-300'
+        />
+      </div>
+      <div className='flex flex-col items-center px-2 justify-center sm:flex-row gap-4 sm:flex-wrap md:px-40 mt-6'>
+        {filteredItems?.map(
+          ({ id, title, description, image, category, price, location }) => (
+            <ItemCard
+              key={id}
+              id={id}
+              title={title}
+              description={description}
+              image={imagesBaseUrl + image}
+              price={price}
+              location={location}
+            />
+          )
+        )}
+      </div>
+    </>
   )
 }
