@@ -25,12 +25,12 @@ export default function About() {
         </div>
         <div className='grid grid-cols-2 gap-4 mt-8'>
           <img
-            className='w-full rounded-lg'
+            className='w-full h-full rounded-lg object-cover'
             src={Friends}
             alt='friends playing guitar'
           />
           <img
-            className='mt-4 w-full lg:mt-10 rounded-lg'
+            className='mt-4 w-full h-full lg:mt-10 rounded-lg object-cover'
             src={Piano}
             alt='boy playing piano'
           />
