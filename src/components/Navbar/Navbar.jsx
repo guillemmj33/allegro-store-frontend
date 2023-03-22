@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LogoutButton from '../LogoutButton/LogoutButton'
 import CreateItemModal from '../Modals/CreateItemModal'
 
 export default function Navbar() {
@@ -19,7 +20,7 @@ export default function Navbar() {
           <button
             data-collapse-toggle='navbar-default'
             type='button'
-            className='inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+            className='inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-200 dark:focus:ring-gray-600'
             aria-controls='navbar-default'
             aria-expanded='false'
           >
@@ -43,7 +44,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to='/'
-                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-cyan-500 md:dark:hover:bg-transparent'
+                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-white md:dark:hover:bg-transparent'
                   aria-current='page'
                 >
                   Home
@@ -52,7 +53,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to='/about'
-                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-cyan-500 md:dark:hover:bg-transparent'
+                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
                   About
                 </Link>
@@ -60,7 +61,7 @@ export default function Navbar() {
               <li>
                 <Link
                   to='/contact'
-                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-cyan-500 md:dark:hover:bg-transparent'
+                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
                   Contact
                 </Link>
@@ -68,17 +69,20 @@ export default function Navbar() {
               <li>
                 <Link
                   to='/register'
-                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
                   <i className='fa-solid fa-user'></i> Login or register
                 </Link>
+              </li>
+              <li>
+                <LogoutButton />
               </li>
               <li>
                 <button
                   id='defaultModalButton'
                   data-modal-toggle='defaultModal'
                   type='button'
-                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
                   <i className='fa-solid fa-circle-plus'></i> Upload product
                 </button>

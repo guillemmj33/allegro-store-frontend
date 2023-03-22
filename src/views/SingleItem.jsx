@@ -20,17 +20,25 @@ export default function SingleItem() {
   }, [id])
 
   return (
-    <div className='flex flex-col items-center mx-auto mt-32'>
-    <SingleItemCard
-        key={id}
-        id={id}
-        title={data.title}
-        description={data.description}
-        image={imagesBaseUrl + data.image}
-        price={data.price}
-        location={data.location}
-        category={data.category}
-      />
-    </div>
+    <>
+      <div className='mt-20 px-2 text-sm sm:mt-24 sm:text-lg sm:px-20'>
+        <a href='/'>
+          <i className='fa-solid fa-arrow-left'></i>
+        </a>
+      </div>
+      <div className='flex flex-col items-center mx-auto mt-6'>
+        <SingleItemCard
+          key={id}
+          id={id}
+          title={data.title}
+          description={data.description}
+          image={imagesBaseUrl + data.image}
+          price={data.price}
+          location={data.location}
+          category={data.category}
+          email={data.email}
+        />
+      </div>
+    </>
   )
 }

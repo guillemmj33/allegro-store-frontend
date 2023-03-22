@@ -57,7 +57,7 @@ export default function Login() {
   }
 
   return (
-    <section className='bg-gray-50 dark:bg-white mt-12 sm:-mt-12'>
+    <section className='bg-gray-50 dark:bg-white mt-16 mb-12 sm:-mt-12'>
       <div className='flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0'>
         <div className='w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-cyan-500 dark:border-gray-700'>
           <div className='p-6 space-y-4 md:space-y-6 sm:p-8'>
@@ -117,7 +117,7 @@ export default function Login() {
                   <div className='ml-3 text-sm'>
                     <label
                       htmlFor='remember'
-                      className='text-gray-500 dark:text-blue-500'
+                      className='text-gray-500 dark:text-blue-600 font-normal'
                     >
                       Remember me
                     </label>
@@ -134,7 +134,7 @@ export default function Login() {
                 Don't have an account yet?{' '}
                 <a
                   href='/register'
-                  className='font-medium text-primary-600 hover:underline dark:text-blue-500'
+                  className='font-semibold text-primary-600 hover:underline dark:text-blue-600'
                 >
                   Sign up
                 </a>

@@ -1,12 +1,19 @@
 import axios from 'axios'
 
-const backendUrl = import.meta.env.VITE_BACKEND_URL
+const baseUrl = import.meta.env.VITE_BACKEND_URL
 
-const createAxiosInstance = () => axios.create({ baseURL: backendUrl })
+export const login = (data) => {
+  return axios.post(baseUrl + '/login', data)
+}
 
-export const login = (data) => createAxiosInstance().post('/login', data)
+export const register = (data) => {
+  return axios.post(baseUrl + '/register', data)
+}
 
-export const register = (data) => createAxiosInstance().post('/register', data)
+export const logout = () => {
+  return axios.post(baseUrl + '/logout')
+}
 
-export const registerAdmin = (data) =>
-  createAxiosInstance().post('/register_admin', data)
+export const register_admin = (data) => {
+  return axios.post(baseUrl + '/register_admin', data)
+}

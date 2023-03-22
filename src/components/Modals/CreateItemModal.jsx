@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { createItem } from "../../services/items.service";
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { createItem } from '../../services/items.service'
 
 export default function CreateItemModal() {
   const [title, setTitle] = useState('')
@@ -39,9 +39,9 @@ export default function CreateItemModal() {
       Swal.fire({
         position: 'center',
         icon: 'error',
-        title: 'There has been a problem, try again!',
+        title: 'Uh oh. You need to log in to upload a product!',
         showConfirmButton: false,
-        timer: 2000,
+        timer: 3000,
       })
     }
   }
@@ -154,10 +154,10 @@ export default function CreateItemModal() {
                   className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-slate-900 dark:focus:ring-primary-500 dark:focus:border-primary-500'
                 >
                   <option defaultValue=''>Select category</option>
-                  <option value='GU'>Guitar</option>
-                  <option value='BA'>Bass</option>
-                  <option value='DR'>Drums</option>
-                  <option value='ST'>Studio</option>
+                  <option value='Guitar'>Guitar</option>
+                  <option value='Bass'>Bass</option>
+                  <option value='Drums'>Drums</option>
+                  <option value='Studio'>Studio</option>
                   <option value='DJ'>DJ</option>
                 </select>
               </div>
