@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LogoutButton from '../LogoutButton/LogoutButton'
 import CreateItemModal from '../Modals/CreateItemModal'
+import allegroLogo from '../../assets/allegro-text.png'
 
 export default function Navbar() {
   return (
@@ -11,7 +12,7 @@ export default function Navbar() {
           <a href='/' className='flex items-center'>
             <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
               <img
-                src='/src/assets/allegro-text.png'
+                src={allegroLogo}
                 className='h-6 mr-3 sm:h-9'
                 alt='Allegro Logo Text'
               />
