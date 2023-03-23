@@ -10,7 +10,6 @@ export default function LogoutButton() {
     try {
       const { data } = await logout()
       console.log(data)
-      localStorage.removeItem('token')
       Swal.fire({
         position: 'center',
         icon: 'success',
@@ -21,6 +20,7 @@ export default function LogoutButton() {
       setIsLoggedOut(true)
       setTimeout(() => {
         navigate('/')
+        localStorage.removeItem('token')
       }, 2000) // Delay the navigation for 2 seconds (2000 milliseconds)
     } catch (error) {
       console.error(error)
