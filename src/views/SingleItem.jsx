@@ -26,7 +26,7 @@ export default function SingleItem() {
           <i className='fa-solid fa-arrow-left'></i>
         </a>
       </div>
-      <div className='flex flex-col items-center mx-auto mt-6'>
+      <div className='flex flex-col items-center mx-auto mt-6 text-slate-900'>
         <SingleItemCard
           key={id}
           id={id}

@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <h1 className='mt-24 px-2 text-center text-2xl tracking-tight font-normal text-gray-900 dark:text-slate-900'>
+      <h1 className='mt-24 px-2 text-center text-2xl tracking-tight font-normal text-slate-900 dark:text-slate-900'>
         Join the millions of music lovers who use Allegro and find your dream
         gear <span className="font-semibold underline decoration-cyan-500">today</span>!
       </h1>
@@ -39,11 +39,11 @@ export default function Home() {
         />
       </div>
       <div className="mt-6 px-2 sm:px-56">
-        <h2 className="font-semibold text-lg">Categories</h2>
+        <h2 className="font-semibold text-lg text-slate-900">Categories</h2>
         <CategoryFilter setCategory={setCategory} />
       </div>
       <div className="mt-2 px-2 sm:px-56">
-        <h2 className="font-semibold text-lg">Products</h2>
+        <h2 className="font-semibold text-slate-900 text-lg">Products</h2>
       </div>
       <div className='flex flex-col items-center px-2 justify-center sm:flex-row gap-4 sm:flex-wrap md:px-40 mt-6'>
         {filteredItems?.map(
