@@ -33,6 +33,8 @@ export default function CreateItemModal() {
       })
       setTimeout(() => {
         navigate('/')
+        event.target.reset()
+        window.location.reload()
       }, 2000) // Delay the navigation for 2 seconds (2000 milliseconds)
     } catch (error) {
       console.log(error)
@@ -43,6 +45,11 @@ export default function CreateItemModal() {
         showConfirmButton: false,
         timer: 3000,
       })
+      setTimeout(() => {
+        navigate('/')
+        event.target.reset()
+        window.location.reload()
+      }, 2000)
     }
   }
 
