@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { UserContext } from '../contexts/UserContext'
 import { login } from '../services/user.service'
 
@@ -132,12 +132,12 @@ export default function Login() {
               </button>
               <p className='text-sm font-light text-gray-500 dark:text-gray-700'>
                 Don't have an account yet?{' '}
-                <a
-                  href='/register'
+                <Link
+                  to='/register'
                   className='font-semibold text-blue-600 hover:underline dark:text-blue-600'
                 >
                   Sign up
-                </a>
+                </Link>
               </p>
             </form>
           </div>
