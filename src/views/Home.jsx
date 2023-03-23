@@ -42,7 +42,7 @@ export default function Home() {
         <h2 className="font-semibold text-lg">Categories</h2>
         <CategoryFilter setCategory={setCategory} />
       </div>
-      <div className="mt-6 px-2 sm:px-56">
+      <div className="mt-2 px-2 sm:px-56">
         <h2 className="font-semibold text-lg">Products</h2>
       </div>
       <div className='flex flex-col items-center px-2 justify-center sm:flex-row gap-4 sm:flex-wrap md:px-40 mt-6'>
