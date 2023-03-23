@@ -10,6 +10,7 @@ export default function LogoutButton() {
     try {
       const { data } = await logout()
       console.log(data)
+      localStorage.removeItem('token')
       Swal.fire({
         position: 'center',
         icon: 'success',
