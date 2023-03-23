@@ -180,7 +180,7 @@ export default function Register() {
               <p className='text-sm font-light text-gray-500 dark:text-gray-700'>
                 Already have an account?{' '}
                 <Link
-                  href='/login'
+                  to='/login'
                   className='font-semibold text-primary-600 hover:underline dark:text-blue-600'
                 >
                   Login here
