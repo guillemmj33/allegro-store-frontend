@@ -74,14 +74,14 @@ export default function Register() {
       <div className='flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0'>
         <div className='w-full bg-cyan-500 border-gray-700 rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-cyan-500 dark:border-gray-700'>
           <div className='p-6 space-y-4 md:space-y-6 sm:p-8'>
-            <h1 className='text-xl font-bold text-white leading-tight tracking-tight md:text-2xl dark:text-slate-900'>
+            <h1 className='text-xl font-bold text-white leading-tight tracking-tight md:text-2xl dark:text-white'>
               Create an account
             </h1>
             <form className='space-y-4 md:space-y-6' onSubmit={handleSubmit} action='#'>
             <div>
                 <label
                   htmlFor='name'
-                  className='block mb-2 text-sm font-medium text-white dark:text-slate-900'
+                  className='block mb-2 text-sm font-medium text-white dark:text-white'
                 >
                   Your name
                 </label>
