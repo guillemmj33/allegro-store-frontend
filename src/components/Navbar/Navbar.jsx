@@ -72,15 +72,7 @@ export default function Navbar() {
                   to='/register'
                   className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
-                  <i className='fa-solid fa-user'></i> Register
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to='/login'
-                  className='block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-white md:dark:hover:bg-transparent'
-                >
-                  <i class="fa-solid fa-right-to-bracket"></i> Login
+                  <i className='fa-solid fa-user'></i> Login or register
                 </Link>
               </li>
               <li>
