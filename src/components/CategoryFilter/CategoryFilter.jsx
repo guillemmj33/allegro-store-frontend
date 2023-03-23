@@ -27,7 +27,7 @@ export default function CategoryFilter({ setCategory }) {
           onClick={() => handleCategoryClick(category.name)}
           className='max-w-sm bg-white rounded-lg'
         >
-          <img className='rounded-t-lg mx-auto block object-cover' width='60' src={category.image} alt={category.name} />
+          <img className='rounded-t-lg mx-auto block object-cover' width='54' src={category.image} alt={category.name} />
           <div className='p-5'>
             <h5 className='text-sm md:text-md font-medium tracking-tight text-gray-900 dark:text-slate-900'>
               {category.name}
