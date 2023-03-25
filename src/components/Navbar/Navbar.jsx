@@ -19,10 +19,10 @@ export default function Navbar() {
             </span>
           </a>
           <button
-            data-collapse-toggle='navbar-default'
+            data-collapse-toggle='flowbite-navbar-default'
             type='button'
             className='inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-200 dark:focus:ring-gray-600'
-            aria-controls='navbar-default'
+            aria-controls='flowbite-navbar-default'
             aria-expanded='false'
           >
             <span className='sr-only'>Open main menu</span>
@@ -34,13 +34,13 @@ export default function Navbar() {
               xmlns='http://www.w3.org/2000/svg'
             >
               <path
-                fill-rule='evenodd'
+                fillRule='evenodd'
                 d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
-                clip-rule='evenodd'
+                clipRule='evenodd'
               ></path>
             </svg>
           </button>
-          <div className='hidden w-full md:block md:w-auto' id='navbar-default'>
+          <div className='hidden w-full md:block md:w-auto' id='flowbite-navbar-default'>
             <ul className='flex flex-col p-4 mt-4 border border-gray-700 rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-white md:dark:bg-white dark:border-gray-700'>
               <li>
                 <Link
