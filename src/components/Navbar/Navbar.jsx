@@ -7,7 +7,7 @@ import allegroLogo from '../../assets/allegro-text.png'
 export default function Navbar() {
   return (
     <>
-      <nav className='fixed top-0 left-0 right-0 bg-white border-gray-200 px-2 border-b sm:px-4 py-2.5 dark:bg-white'>
+      <nav className='bg-white border-gray-200 px-2 border-b sm:px-4 py-2.5 dark:bg-white'>
         <div className='container flex flex-wrap items-center justify-between mx-auto'>
           <a href='/' className='flex items-center'>
             <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
@@ -25,7 +25,7 @@ export default function Navbar() {
             aria-controls='navbar-default'
             aria-expanded='false'
           >
-            <span className='sr-only z-40'>Open main menu</span>
+            <span className='sr-only'>Open main menu</span>
             <svg
               className='w-7 h-7'
               aria-hidden='true'
