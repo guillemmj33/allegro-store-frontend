@@ -6,6 +6,7 @@ import allegroLogo from '../../assets/allegro-text.png'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen)

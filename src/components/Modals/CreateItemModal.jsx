@@ -9,7 +9,12 @@ export default function CreateItemModal() {
   const [price, setPrice] = useState('')
   const [category, setCategory] = useState('')
   const [location, setLocation] = useState('')
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const navigate = useNavigate()
+
+  const handleModalToggle = () => {
+    setIsModalOpen(!isModalOpen)
+  }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
@@ -59,8 +64,7 @@ export default function CreateItemModal() {
       id='defaultModal'
       tabIndex='-1'
       aria-hidden='true'
-      className='hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full'
-    >
+      className={`${isModalOpen ? '' : 'hidden'} overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full`}    >
       <div className='relative p-4 w-full max-w-2xl h-full md:h-auto'>
         {/* <!-- Modal content --> */}
         <div className='relative p-4 bg-white rounded-lg shadow dark:bg-white sm:p-5'>
@@ -71,8 +75,9 @@ export default function CreateItemModal() {
             </h3>
             <button
               type='button'
-              className='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white'
               data-modal-toggle='defaultModal'
+              className='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white'
+              onClick={handleModalToggle}
             >
               <svg
                 aria-hidden='true'
