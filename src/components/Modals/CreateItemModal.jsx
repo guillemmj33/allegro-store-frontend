@@ -9,7 +9,6 @@ export default function CreateItemModal({ isModalOpen, handleModalToggle }) {
   const [price, setPrice] = useState('')
   const [category, setCategory] = useState('')
   const [location, setLocation] = useState('')
-  const [isModalOpen, setIsModalOpen] = useState(false)
   const navigate = useNavigate()
 
   const handleSubmit = async (event) => {
