@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { createItem } from '../../services/items.service'
 
-export default function CreateItemModal() {
+export default function CreateItemModal({ isModalOpen, handleModalToggle }) {
   const [title, setTitle] = useState('')
   const [image, setImage] = useState('')
   const [description, setDescription] = useState('')
@@ -11,10 +11,6 @@ export default function CreateItemModal() {
   const [location, setLocation] = useState('')
   const [isModalOpen, setIsModalOpen] = useState(false)
   const navigate = useNavigate()
-
-  const handleModalToggle = () => {
-    setIsModalOpen(!isModalOpen)
-  }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
