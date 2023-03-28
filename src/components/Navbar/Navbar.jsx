@@ -12,8 +12,12 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const handleModalToggle = () => {
-    setIsModalOpen(!isModalOpen)
+  const handleOpenModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false)
   }
 
   return (
@@ -108,7 +112,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <CreateItemModal isModalOpen={isModalOpen} handleModalToggle={handleModalToggle}/>
+      <CreateItemModal isModalOpen={isModalOpen} handleOpenModaln={handleOpenModal} handleCloseModal={handleCloseModal} />
     </>
   )
 }
