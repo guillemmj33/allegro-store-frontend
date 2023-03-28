@@ -91,7 +91,7 @@ export default function CreateItemModal({ isModalOpen, handleModalToggle }) {
               <span className='sr-only'>Close modal</span>
             </button>
           </div>
-          {/* <!-- Modal body --> */}
+          {/* <!--  Modal body  --> */}
           <form
             onSubmit={handleSubmit}
             action='#'
