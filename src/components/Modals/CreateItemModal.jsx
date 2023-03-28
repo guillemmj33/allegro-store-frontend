@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { createItem } from '../../services/items.service'
 
-export default function CreateItemModal({ isModalOpen, handleModalToggle }) {
+export default function CreateItemModal() {
   const [title, setTitle] = useState('')
   const [image, setImage] = useState('')
   const [description, setDescription] = useState('')
@@ -59,7 +59,7 @@ export default function CreateItemModal({ isModalOpen, handleModalToggle }) {
       id='defaultModal'
       tabIndex='-1'
       aria-hidden='true'
-      className={`${isModalOpen ? '' : 'hidden'} overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full`}    >
+      className='overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-modal md:h-full'>
       <div className='relative p-4 w-full max-w-2xl h-full md:h-auto'>
         {/* <!-- Modal content --> */}
         <div className='relative p-4 bg-white rounded-lg shadow dark:bg-white sm:p-5'>
