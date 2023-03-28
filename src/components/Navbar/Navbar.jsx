@@ -12,12 +12,8 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const handleOpenModal = () => {
-    setIsModalOpen(true)
-  }
-
-  const handleCloseModal = () => {
-    setIsModalOpen(false)
+  const handleModalToggle = () => {
+    setIsModalOpen(!isModalOpen)
   }
 
   return (
@@ -101,7 +97,7 @@ export default function Navbar() {
               <li>
                 <button
                   id='defaultModalButton'
-                  onClick={handleOpenModal}
+                  onClick={handleModalToggle}
                   type='button' 
                   className='block py-2 pl-3 pr-4 text-gray-500 hover:text-white rounded hover:bg-cyan-500 md:hover:bg-transparent md:border-0 md:hover:text-cyan-500 md:p-0 dark:text-gray-500 md:dark:hover:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
@@ -112,7 +108,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <CreateItemModal isModalOpen={isModalOpen} handleOpenModaln={handleOpenModal} handleCloseModal={handleCloseModal} />
+      <CreateItemModal isModalOpen={isModalOpen} handleModalToggle={handleModalToggle}/>
     </>
   )
 }
